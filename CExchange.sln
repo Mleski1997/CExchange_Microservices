@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CExchange.Services.Wallet",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB1D6885-AE4A-4D8E-8BCB-BA1D82571C95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallet.Core", "CExchange.Services.Wallet\CExchange.Services.Wallet.Core\CExchange.Services.Wallet.Core.csproj", "{70697C01-D27B-4601-839D-88B99060348C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Wallet.Core", "CExchange.Services.Wallet\CExchange.Services.Wallet.Core\CExchange.Services.Wallet.Core.csproj", "{70697C01-D27B-4601-839D-88B99060348C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallet.Api", "CExchange.Services.Wallet.Api\CExchange.Services.Wallet.Api.csproj", "{89ADBD85-F035-4E17-89AF-BA3EF8E25A21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{70697C01-D27B-4601-839D-88B99060348C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70697C01-D27B-4601-839D-88B99060348C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70697C01-D27B-4601-839D-88B99060348C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89ADBD85-F035-4E17-89AF-BA3EF8E25A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ADBD85-F035-4E17-89AF-BA3EF8E25A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ADBD85-F035-4E17-89AF-BA3EF8E25A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ADBD85-F035-4E17-89AF-BA3EF8E25A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +32,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FB1D6885-AE4A-4D8E-8BCB-BA1D82571C95} = {C69D78FC-E64A-4910-860F-26A354AC61C3}
 		{70697C01-D27B-4601-839D-88B99060348C} = {FB1D6885-AE4A-4D8E-8BCB-BA1D82571C95}
+		{89ADBD85-F035-4E17-89AF-BA3EF8E25A21} = {FB1D6885-AE4A-4D8E-8BCB-BA1D82571C95}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C0739A6-B4B2-4D61-89E6-99409A04142F}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CExchange.Services.Availabity.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73b48cd98d0f0c882ff87d24478751d9e6305133")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a83431f62bf5f1fa009f758933932a4c4047585d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CExchange.Services.Availabity.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CExchange.Services.Availabity.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

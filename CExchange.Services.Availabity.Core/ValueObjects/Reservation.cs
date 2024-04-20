@@ -8,29 +8,20 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Availabity.Core.ValueObjects
 {
-    public struct Reservation : IEquatable<Reservation>
+    public class Reservation
     {
         public DateTime DateTime { get;  }
         public int Prioryty { get; }
 
-        public Reservation(DateTime dateTime, int priority)
+        private Reservation()
+        {
+        }
+
+
+      public Reservation(DateTime dateTime, int prioryty)
         {
             DateTime = dateTime;
-            Prioryty = priority;
-            
+            Prioryty = prioryty;
         }
-
-        public bool Equals(Reservation other)
-        {
-            return DateTime.Equals(other.DateTime) && Prioryty == other.Prioryty;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return obj is Reservation other && Equals(other);  
-        }
-
-        public override int GetHashCode() => HashCode.Combine(DateTime, Prioryty);
-
     }
 }

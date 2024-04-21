@@ -1,4 +1,5 @@
 ﻿using CExchange.Services.Availabity.Core.Exceptions;
+using CExchange.Services.Availabity.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

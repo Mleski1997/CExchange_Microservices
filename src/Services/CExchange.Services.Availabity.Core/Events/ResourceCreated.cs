@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CExchange.Services.Availabity.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CExchange.Services.Availabity.Core.Events
+namespace CExchange.Services.Availability.Core.Events
 { //Marker
     public interface IDomainEvent
     {

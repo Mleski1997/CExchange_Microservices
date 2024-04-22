@@ -1423,6 +1423,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CExchange.Services.Availability.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CExchange.Services.Availability.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CExchange.Services.Availability.Core.dll": {}
+        }
       }
     }
   },
@@ -4849,10 +4859,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CExchange.Services.Availability.Core/1.0.0": {
+      "type": "project",
+      "path": "../CExchange.Services.Availabity.Core/CExchange.Services.Availability.Core.csproj",
+      "msbuildProject": "../CExchange.Services.Availabity.Core/CExchange.Services.Availability.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CExchange.Services.Availability.Core >= 1.0.0",
       "Convey >= 1.1.448",
       "Convey.CQRS.Commands >= 1.1.448",
       "Convey.CQRS.Events >= 1.1.448",
@@ -4868,9 +4884,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\Cexchange.Services.Availability.Application.csproj",
-      "projectName": "Cexchange.Services.Availability.Application",
-      "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\Cexchange.Services.Availability.Application.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\CExchange.Services.Availability.Application.csproj",
+      "projectName": "CExchange.Services.Availability.Application",
+      "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\CExchange.Services.Availability.Application.csproj",
       "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -4894,7 +4910,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
+              "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

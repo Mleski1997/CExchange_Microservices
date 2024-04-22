@@ -1,11 +1,6 @@
-﻿using CExchange.Services.Availabity.Core.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CExchange.Services.Availability.Core.Exceptions;
 
-namespace CExchange.Services.Availabity.Core.Entities
+namespace CExchange.Services.Availability.Core.Entities
 {
     public record AggregateId
     {

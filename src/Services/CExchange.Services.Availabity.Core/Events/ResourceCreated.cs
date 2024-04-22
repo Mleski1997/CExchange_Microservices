@@ -1,11 +1,6 @@
-﻿using CExchange.Services.Availabity.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CExchange.Services.Availability.Core.Entities;
 
-namespace CExchange.Services.Availabity.Core.Events
+namespace CExchange.Services.Availability.Core.Events
 {
     public class ResourceCreated : IDomainEvent
     {

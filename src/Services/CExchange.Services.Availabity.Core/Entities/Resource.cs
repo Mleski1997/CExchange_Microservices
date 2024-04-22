@@ -1,12 +1,8 @@
-﻿using CExchange.Services.Availabity.Core.Exceptions;
-using CExchange.Services.Availabity.Core.ValueObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CExchange.Services.Availability.Core.Events;
+using CExchange.Services.Availability.Core.Exceptions;
+using CExchange.Services.Availability.Core.ValueObjects;
 
-namespace CExchange.Services.Availabity.Core.Entities
+namespace CExchange.Services.Availability.Core.Entities
 {
     public class Resource : AggregateRoot
     {

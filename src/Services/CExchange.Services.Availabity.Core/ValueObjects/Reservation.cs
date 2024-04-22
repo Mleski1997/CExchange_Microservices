@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CExchange.Services.Availabity.Core.ValueObjects
+namespace CExchange.Services.Availability.Core.ValueObjects
 {
     public class Reservation
     {
         public DateTime DateTime { get; }
-        public int Prioryty { get; }
+        public int Priority { get; }
 
         private Reservation()
         {
@@ -19,7 +19,7 @@ namespace CExchange.Services.Availabity.Core.ValueObjects
         public Reservation(DateTime dateTime, int prioryty)
         {
             DateTime = dateTime;
-            Prioryty = prioryty;
+            Priority = prioryty;
         }
     }
 }

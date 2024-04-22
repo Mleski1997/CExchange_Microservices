@@ -40,8 +40,8 @@
               "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availability.Infrastructure\\CExchange.Services.Availability.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availability.Infrastructure\\CExchange.Services.Availability.Infrastructure.csproj"
               },
-              "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj": {
-                "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj"
+              "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
+                "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj"
               }
             }
           }
@@ -65,7 +65,19 @@
               "target": "Package",
               "version": "[1.1.448, )"
             },
+            "Convey.Logging": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Secrets.Vault": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Convey.WebApi": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.WebApi.CQRS": {
               "target": "Package",
               "version": "[1.1.448, )"
             },
@@ -126,7 +138,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
+                "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -214,7 +230,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
+                "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -233,6 +253,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Convey": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Persistence.MongoDB": {
               "target": "Package",
               "version": "[1.1.448, )"
             }
@@ -257,12 +281,12 @@
         }
       }
     },
-    "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj": {
+    "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj",
-        "projectName": "CExchange.Services.Availabity.Core",
-        "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj",
+        "projectName": "CExchange.Services.Availability.Core",
+        "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\obj\\",
         "projectStyle": "PackageReference",

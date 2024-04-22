@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UOi+k9LqMayusNTWpxVJCU5Aa+qUD2OJZifl+UlfXDgAtr7zpka83XiJBuustZ0Mk9E9+ocuklojxJUjI8GTfQ==",
+  "dgSpecHash": "5diigsWTuE4VXU67Im+CwFgtCnau2Qsw8GDsm1xHALepdlpdR9f/5M4BO63xyIjuguRQfd6rc/7KwmRNVBAIWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availabity.Core.csproj",
+  "projectFilePath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

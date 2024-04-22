@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CExchange.Services.Availability.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12d38038e3f12b786695be1840685d594c8c5f2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5edb5bbd6a5df251372404b5b8ede27efda476e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CExchange.Services.Availability.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CExchange.Services.Availability.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

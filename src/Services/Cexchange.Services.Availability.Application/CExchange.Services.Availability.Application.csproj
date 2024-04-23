@@ -14,4 +14,8 @@
     <PackageReference Include="Convey.MessageBrokers" Version="1.1.448" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CExchange.Services.Availabity.Core\CExchange.Services.Availability.Core.csproj" />
+  </ItemGroup>
+
 </Project>

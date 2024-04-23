@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "CExchange.Services.Availability.Application/1.0.0": {
         "dependencies": {
+          "CExchange.Services.Availability.Core": "1.0.0",
           "Convey": "1.1.448",
           "Convey.CQRS.Commands": "1.1.448",
           "Convey.CQRS.Events": "1.1.448",
@@ -776,6 +777,11 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "CExchange.Services.Availability.Core/1.0.0": {
+        "runtime": {
+          "CExchange.Services.Availability.Core.dll": {}
+        }
       }
     }
   },
@@ -1365,6 +1371,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "CExchange.Services.Availability.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

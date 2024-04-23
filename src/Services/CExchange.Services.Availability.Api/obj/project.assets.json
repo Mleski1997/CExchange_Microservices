@@ -54,6 +54,20 @@
           "lib/net6.0/Convey.CQRS.Queries.dll": {}
         }
       },
+      "Convey.HTTP/1.1.448": {
+        "type": "package",
+        "dependencies": {
+          "Convey": "1.1.448",
+          "Microsoft.Extensions.Http": "6.0.0",
+          "Polly": "7.2.2"
+        },
+        "compile": {
+          "lib/net6.0/Convey.HTTP.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Convey.HTTP.dll": {}
+        }
+      },
       "Convey.Logging/1.1.448": {
         "type": "package",
         "dependencies": {
@@ -345,6 +359,25 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         }
@@ -720,6 +753,19 @@
         },
         "runtime": {
           "lib/netstandard2.1/Open.Serialization.Json.Utf8Json.dll": {}
+        }
+      },
+      "Polly/7.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -2353,9 +2399,16 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "CExchange.Services.Availability.Application": "1.0.0",
           "CExchange.Services.Availability.Core": "1.0.0",
           "Convey": "1.1.448",
-          "Convey.Persistence.MongoDB": "1.1.448"
+          "Convey.CQRS.Commands": "1.1.448",
+          "Convey.CQRS.Events": "1.1.448",
+          "Convey.CQRS.Queries": "1.1.448",
+          "Convey.HTTP": "1.1.448",
+          "Convey.MessageBrokers": "1.1.448",
+          "Convey.Persistence.MongoDB": "1.1.448",
+          "Convey.WebApi": "1.1.448"
         },
         "compile": {
           "bin/placeholder/CExchange.Services.Availability.Infrastructure.dll": {}
@@ -2413,6 +2466,18 @@
         "convey.cqrs.queries.1.1.448.nupkg.sha512",
         "convey.cqrs.queries.nuspec",
         "lib/net6.0/Convey.CQRS.Queries.dll"
+      ]
+    },
+    "Convey.HTTP/1.1.448": {
+      "sha512": "MCUceR2Qvrdg2tFBpnIoD06RNhEP0HOkAeDcFRxwwQkdMJb6jNqVjbMdwb0rr7xnDgY7Gg+0ZnLlkhYPSj3QHg==",
+      "type": "package",
+      "path": "convey.http/1.1.448",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "convey.http.1.1.448.nupkg.sha512",
+        "convey.http.nuspec",
+        "lib/net6.0/Convey.HTTP.dll"
       ]
     },
     "Convey.Logging/1.1.448": {
@@ -2993,6 +3058,25 @@
         "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
+    "Microsoft.Extensions.Http/6.0.0": {
+      "sha512": "15+pa2G0bAMHbHewaQIdr/y6ag2H3yh4rd9hTXavtWDzQBkvpe2RMqFg8BxDpcQWssmjmBApGPcw93QRz6YcMg==",
+      "type": "package",
+      "path": "microsoft.extensions.http/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Http.dll",
+        "lib/net461/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.6.0.0.nupkg.sha512",
+        "microsoft.extensions.http.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Extensions.Logging/6.0.0": {
       "sha512": "eIbyj40QDg1NDz0HBW0S5f3wrLVnKWnDJ/JtZ+yJDFnDj90VoPuoPmFkeaXrtu+0cKm5GRAwoDf+dBWXK0TUdg==",
       "type": "package",
@@ -3431,6 +3515,29 @@
         "logo.png",
         "open.serialization.json.utf8json.2.3.1.nupkg.sha512",
         "open.serialization.json.utf8json.nuspec"
+      ]
+    },
+    "Polly/7.2.2": {
+      "sha512": "E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
+      "type": "package",
+      "path": "polly/7.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.2.2.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {

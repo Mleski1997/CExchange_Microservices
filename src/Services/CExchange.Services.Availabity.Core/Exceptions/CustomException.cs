@@ -8,6 +8,7 @@ namespace CExchange.Services.Availability.Core.Exceptions
 {
     public abstract class CustomException : Exception
     {
+        public virtual string Code { get; }
         protected CustomException(string message) : base(message)
         { }
     }

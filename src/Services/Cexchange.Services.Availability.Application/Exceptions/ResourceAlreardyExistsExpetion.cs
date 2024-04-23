@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Availability.Application.Exceptions
 {
-    public class ResourceAlreardyExistsExpetion : CustomException
+    public class ResourceAlreardyExistsExpetion : AppException
     {
         public Guid ResourceId { get;}
         public ResourceAlreardyExistsExpetion(Guid resourceId) : base($"Resource with id {resourceId} already id.")

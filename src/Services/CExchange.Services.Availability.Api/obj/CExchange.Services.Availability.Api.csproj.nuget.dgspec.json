@@ -231,6 +231,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\CExchange.Services.Availability.Application.csproj": {
+                "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Cexchange.Services.Availability.Application\\CExchange.Services.Availability.Application.csproj"
+              },
               "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj": {
                 "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\CExchange.Services.Availabity.Core\\CExchange.Services.Availability.Core.csproj"
               }
@@ -256,7 +259,31 @@
               "target": "Package",
               "version": "[1.1.448, )"
             },
+            "Convey.CQRS.Commands": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.CQRS.Events": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.CQRS.Queries": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.HTTP": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Convey.Persistence.MongoDB": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.WebApi": {
               "target": "Package",
               "version": "[1.1.448, )"
             }

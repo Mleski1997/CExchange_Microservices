@@ -5,6 +5,10 @@ using Convey.WebApi;
 using Convey.WebApi.CQRS;
 using Cexchange.Services.Availability.Application.Commands;
 using Convey.Types;
+using CExchange.Services.Availability.Application.Queries;
+using CExchange.Services.Availability.Core.Entities;
+using CExchange.Services.Availability.Application.DTO;
+using CExchange.Services.Availability.Infrastructure.Mongo.Queries.Handlers;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,6 +44,8 @@ app.UseInfrastructure()
     .UseDispatcherEndpoints(endpoints => endpoints
      .Get("", ctx => ctx.Response.WriteAsync(
          ctx.RequestServices.GetService<AppOptions>().Name))
+    .Get<GetResources, IEnumerable<ResourceDto>>("resources")
+    .Get<GetResource, ResourceDto>("resources/{resourceId}")
     .Post<AddResource>("resources",
          afterDispatch: (cmd, ctx) => ctx.Response.Created($"resources/{cmd.ResourceId}")));
 

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Availability.Application.Exceptions
 {
-    public abstract class CustomException : Exception
+    public abstract class AppException : Exception
     {
-        protected CustomException(string message) : base(message)
+        public virtual string Code { get; }
+        protected AppException(string message) : base(message)
         { }
     }
 }

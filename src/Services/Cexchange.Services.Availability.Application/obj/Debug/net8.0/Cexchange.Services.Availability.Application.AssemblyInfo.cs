@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CExchange.Services.Availability.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5edb5bbd6a5df251372404b5b8ede27efda476e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c114bb7c5d45fa209b1617ac701414e55c8f3f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("CExchange.Services.Availability.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CExchange.Services.Availability.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

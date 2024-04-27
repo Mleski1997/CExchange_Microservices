@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Coins.Core.Entities
 {
-    public class AggregadeId
+    public class AggregadeId : IEquatable<AggregadeId>
     {
         public Guid Value { get; }
         public AggregadeId()
@@ -30,6 +30,11 @@ namespace CExchange.Services.Coins.Core.Entities
         public static implicit operator AggregadeId(Guid id) => new(id);
 
         public override string ToString() => Value.ToString();
+
+        public bool Equals(AggregadeId? other)
+        {
+            throw new NotImplementedException();
+        }
     }
            
 }

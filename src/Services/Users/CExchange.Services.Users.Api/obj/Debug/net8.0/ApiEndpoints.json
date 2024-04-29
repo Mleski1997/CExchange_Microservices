@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "Method": "Post",
+    "RelativePath": "User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CExchange.Services.Users.Application.Commands.SignUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

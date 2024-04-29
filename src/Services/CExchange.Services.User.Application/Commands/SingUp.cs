@@ -1,7 +1,7 @@
-﻿using Convey.CQRS.Commands;s
+﻿using Convey.CQRS.Commands;
 
-namespace CExchange.Services.User.Application.Commands
+namespace CExchange.Services.Users.Application.Commands
 {
-    public record SignUp(Guid Id, string Email, string Name, string LastName, string Password) : ICommand;
+    public record SignUp(Guid UserId, string Email, string Name, string LastName, string Password) : ICommand;
 
 }

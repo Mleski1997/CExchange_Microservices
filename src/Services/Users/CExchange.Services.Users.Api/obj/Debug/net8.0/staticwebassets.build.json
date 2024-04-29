@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WekXngtweMuuwanIKx7Pg3z+46j3mLwHE9wRMPVeUt0=",
+  "Source": "CExchange.Services.Users.Api",
+  "BasePath": "_content/CExchange.Services.Users.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

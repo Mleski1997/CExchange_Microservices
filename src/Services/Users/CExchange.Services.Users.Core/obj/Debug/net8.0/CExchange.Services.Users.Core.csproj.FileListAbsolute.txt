@@ -1,0 +1,15 @@
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\bin\Debug\net8.0\CExchange.Services.Users.Core.deps.json
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\bin\Debug\net8.0\CExchange.Services.Users.Core.runtimeconfig.json
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\bin\Debug\net8.0\CExchange.Services.Users.Core.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\bin\Debug\net8.0\CExchange.Services.Users.Core.pdb
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.csproj.AssemblyReference.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.AssemblyInfoInputs.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.AssemblyInfo.cs
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.csproj.CoreCompileInputs.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.sourcelink.json
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\refint\CExchange.Services.Users.Core.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.pdb
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\CExchange.Services.Users.Core.genruntimeconfig.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Core\obj\Debug\net8.0\ref\CExchange.Services.Users.Core.dll

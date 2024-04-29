@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DAL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CExchange.Services.User.Application\CExchange.Services.Users.Application.csproj" />
+  </ItemGroup>
+
 </Project>

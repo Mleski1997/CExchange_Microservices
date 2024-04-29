@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CExchange.Services.Users.Api.props" />
+</Project>

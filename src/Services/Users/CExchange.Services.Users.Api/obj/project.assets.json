@@ -2455,7 +2455,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CExchange.Services.Users.Application": "1.0.0"
+          "CExchange.Services.Users.Application": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4"
         },
         "compile": {
           "bin/placeholder/CExchange.Services.Users.Infrastructure.dll": {}

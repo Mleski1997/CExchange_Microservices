@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Core.Exceptions
 {
-    public abstract class ExceptionCustom : Exception
+    public abstract class CustomException : Exception
     {
-        protected ExceptionCustom(string message) : base(message) 
+        protected CustomException(string message) : base(message) 
         {
             
         }

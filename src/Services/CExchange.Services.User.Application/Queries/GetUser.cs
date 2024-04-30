@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Queries
 {
-    public class GetUser : IQuery<UserDto>
+    public class GetUser : IQuery<UserDetailsDto>
      {
         public Guid UserId { get; set; }
      }

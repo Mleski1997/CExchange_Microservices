@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "CExchange.Services.Users.Application.Queries.GetUsers",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CExchange.Services.Users.Application.DTO.UserDto, CExchange.Services.Users.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
     "Method": "Post",
     "RelativePath": "User",
     "HttpMethod": "POST",
@@ -14,5 +40,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "User/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CExchange.Services.Users.Application.DTO.UserDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

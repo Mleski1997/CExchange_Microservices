@@ -9,6 +9,8 @@
       "CExchange.Services.Users.Infrastructure/1.0.0": {
         "dependencies": {
           "CExchange.Services.Users.Application": "1.0.0",
+          "CExchange.Services.Users.Core": "1.0.0",
+          "Convey.CQRS.Queries": "1.1.448",
           "Microsoft.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore.Design": "8.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4",

@@ -1,0 +1,16 @@
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.csproj.AssemblyReference.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.AssemblyInfoInputs.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.AssemblyInfo.cs
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.csproj.CoreCompileInputs.cache
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.sourcelink.json
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\bin\Debug\net8.0\CExchange.Services.Users.Application.deps.json
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\bin\Debug\net8.0\CExchange.Services.Users.Application.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\bin\Debug\net8.0\CExchange.Services.Users.Application.pdb
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\bin\Debug\net8.0\CExchange.Services.Users.Core.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\bin\Debug\net8.0\CExchange.Services.Users.Core.pdb
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchang.0033AE54.Up2Date
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\refint\CExchange.Services.Users.Application.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\CExchange.Services.Users.Application.pdb
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.User.Application\obj\Debug\net8.0\ref\CExchange.Services.Users.Application.dll

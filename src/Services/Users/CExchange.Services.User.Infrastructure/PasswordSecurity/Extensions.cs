@@ -15,7 +15,7 @@ namespace CExchange.Services.Users.Infrastructure.PasswordSecurity
         public static IServiceCollection AddSecurity(this IServiceCollection services)
         {
             services
-                .AddSingleton<IPasswordHasher<User>, PasswordHasher<User>>()
+                .AddSingleton<IPasswordHasher<object>, PasswordHasher<object>>()
                 .AddSingleton<IPasswordManger, PasswordManager>();
 
             return services;

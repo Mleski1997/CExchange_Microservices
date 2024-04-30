@@ -1,5 +1,7 @@
-﻿using CExchange.Services.Users.Infrastructure.DAL;
+﻿using CExchange.Services.Users.Core.Repositories;
+using CExchange.Services.Users.Infrastructure.DAL;
 using CExchange.Services.Users.Infrastructure.PasswordSecurity;
+using CExchange.Services.Users.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,7 @@ namespace CExchange.Services.Users.Infrastructure
             });
             services.AddSecurity();
             services.AddControllers();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         

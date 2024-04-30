@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CExchange.Services.Users.Application.Commands.SignUp",
+        "Type": "CExchange.Services.Users.Application.Command.SignUp",
         "IsRequired": true
       }
     ],

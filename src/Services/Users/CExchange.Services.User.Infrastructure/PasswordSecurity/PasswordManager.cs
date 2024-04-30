@@ -6,17 +6,16 @@ namespace CExchange.Services.Users.Infrastructure.PasswordSecurity
 {
     internal sealed class PasswordManager : IPasswordManger
     {
-        private readonly IPasswordHasher<User> _passwordHasher;
+        private readonly IPasswordHasher<object> _passwordHasher;
 
-        public PasswordManager(IPasswordHasher<User> passwordHasher)
+        public PasswordManager(IPasswordHasher<object> passwordHasher)
         {
             _passwordHasher = passwordHasher;
         }
-        public string Secure(string password) => _passwordHasher.HashPassword(default, password);
+        public string Secure(string password) => _passwordHasher.HashPassword(new object(), password);
 
-
-        public bool Validate(string password, string securedPassword) => _passwordHasher.VerifyHashedPassword(default, securedPassword, password)
-            is PasswordVerificationResult.Success;
-        
+        public bool IsValid(string password, string securedPassword)
+            => _passwordHasher.VerifyHashedPassword(new object(), securedPassword, password) ==
+               PasswordVerificationResult.Success;
     }
 }

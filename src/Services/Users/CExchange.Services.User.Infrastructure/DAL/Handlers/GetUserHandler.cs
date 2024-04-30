@@ -1,17 +1,12 @@
-﻿using CExchange.Services.Users.Application.DTO;
+﻿
+using CExchange.Services.Users.Application.DTO;
 using CExchange.Services.Users.Application.Queries;
 using CExchange.Services.Users.Core.Entities;
+using CExchange.Services.Users.Infrastructure.DAL;
 using Convey.CQRS.Queries;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CExchange.Services.Users.Infrastructure.DAL.Handlers
-{
-    internal sealed class GetUserHandler : IQueryHandler<GetUser, UserDetailsDto>
+internal sealed class GetUserHandler : IQueryHandler<GetUser, UserDetailsDto>
     {
         private readonly UserDbContext _context;
 
@@ -37,4 +32,3 @@ namespace CExchange.Services.Users.Infrastructure.DAL.Handlers
             };
         }
     }
-}

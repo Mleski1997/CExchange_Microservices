@@ -1,10 +1,11 @@
-﻿using CExchange.Services.Users.Application.Commands;
+﻿
+using CExchange.Services.Users.Application.Command;
 using CExchange.Services.Users.Application.DTO;
 using CExchange.Services.Users.Application.Queries;
 using Convey.CQRS.Commands;
 using Convey.CQRS.Queries;
 using Microsoft.AspNetCore.Mvc;
-using System.Windows.Input;
+
 
 namespace CExchange.Services.Users.Api.Controllers
 {

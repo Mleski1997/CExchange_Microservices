@@ -20,7 +20,7 @@ namespace CExchange.Services.Users.Api.Controllers
         {
             command = command with {UserId = Guid.NewGuid()};
             await _signUpHandler.HandleAsync(command);
-            return NoContent();
+            return CreatedAtAction();
 
         }
     }

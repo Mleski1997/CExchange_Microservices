@@ -1,5 +1,7 @@
-﻿using Convey;
+﻿using CExchange.Services.Users.Application.PasswordSecurity;
+using Convey;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -21,6 +23,8 @@ namespace CExchange.Services.Users.Infrastructure.Auth
             var options = configuration.GetOptions<AuthOptions>(SectionName);
 
             services
+                .AddSingleton<IAuthenticator, Authenticator>()
+                .AddSingleton<ITokenStorage, HttpContextTokenStorage>()
                 .AddAuthentication(x =>
                 {
                     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -38,6 +42,7 @@ namespace CExchange.Services.Users.Infrastructure.Auth
                     };
 
                 });
+            services.AddAuthentication();
 
                 return services;
         }

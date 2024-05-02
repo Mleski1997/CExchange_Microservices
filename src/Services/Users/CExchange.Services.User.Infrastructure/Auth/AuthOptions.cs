@@ -12,6 +12,5 @@ namespace CExchange.Services.Users.Infrastructure.Auth
         public string Audience  { get; set; }
         public string  SigningKey { get; set; }
         public TimeSpan? Expiry { get; set; }
-
     }
 }

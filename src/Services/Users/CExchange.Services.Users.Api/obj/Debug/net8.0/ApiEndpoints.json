@@ -27,22 +27,6 @@
   },
   {
     "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
-    "Method": "Post",
-    "RelativePath": "User",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "CExchange.Services.Users.Application.Command.SignUp",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
     "Method": "Get",
     "RelativePath": "User/{userId}",
     "HttpMethod": "GET",
@@ -66,5 +50,47 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "Method": "Post",
+    "RelativePath": "User/sign-in",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CExchange.Services.Users.Application.Command.SignIn",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CExchange.Services.Users.Application.DTO.JwtDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "Method": "Post",
+    "RelativePath": "User/sign-up",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CExchange.Services.Users.Application.Command.SignUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

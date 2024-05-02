@@ -1,7 +1,11 @@
-﻿using CExchange.Services.Users.Core.Repositories;
+﻿using CExchange.Services.Users.Core.Abstractions;
+using CExchange.Services.Users.Core.Repositories;
+using CExchange.Services.Users.Infrastructure.Auth;
 using CExchange.Services.Users.Infrastructure.DAL;
 using CExchange.Services.Users.Infrastructure.PasswordSecurity;
 using CExchange.Services.Users.Infrastructure.Repositories;
+using CExchange.Services.Users.Infrastructure.Time;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,10 +27,22 @@ namespace CExchange.Services.Users.Infrastructure
             });
             services.AddSecurity();
             services.AddControllers();
+            services.AddAuth(configuration);
+            services.AddHttpContextAccessor();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddSingleton<IClock, Clock>();
 
             return services;
         
+        }
+
+        public static WebApplication UseInfrastructure(this WebApplication app)
+        {
+            app.MapControllers();
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            return app;    
         }
     }
 }

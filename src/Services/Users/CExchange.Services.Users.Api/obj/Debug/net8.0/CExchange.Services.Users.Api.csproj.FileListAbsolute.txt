@@ -152,3 +152,4 @@ C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Api\bin\Deb
 C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\micha\CExchange\src\Services\Users\CExchange.Services.Users.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

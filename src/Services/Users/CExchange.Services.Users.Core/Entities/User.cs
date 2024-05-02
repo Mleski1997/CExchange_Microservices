@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CExchange.Services.Users.Core.ValueObjects;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,10 @@ namespace CExchange.Services.Users.Core.Entities
     {
         public Guid Id { get; set; }
         [EmailAddress]
-        public string Email { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Password { get; set; }
-
+        public Email Email { get; set; }
+        public Name Name { get; set; }
+        public LastName LastName { get; set; }
+        public Role Role { get; set; }
+        public Password Password { get; set; }
     }
 }

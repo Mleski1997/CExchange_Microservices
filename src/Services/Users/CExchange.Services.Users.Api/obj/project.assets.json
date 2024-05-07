@@ -8984,8 +8984,8 @@
     },
     "CExchange.Services.Users.Application/1.0.0": {
       "type": "project",
-      "path": "../CExchange.Services.User.Application/CExchange.Services.Users.Application.csproj",
-      "msbuildProject": "../CExchange.Services.User.Application/CExchange.Services.Users.Application.csproj"
+      "path": "../CExchange.Services.Users.Application/CExchange.Services.Users.Application.csproj",
+      "msbuildProject": "../CExchange.Services.Users.Application/CExchange.Services.Users.Application.csproj"
     },
     "CExchange.Services.Users.Core/1.0.0": {
       "type": "project",
@@ -8994,8 +8994,8 @@
     },
     "CExchange.Services.Users.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../CExchange.Services.User.Infrastructure/CExchange.Services.Users.Infrastructure.csproj",
-      "msbuildProject": "../CExchange.Services.User.Infrastructure/CExchange.Services.Users.Infrastructure.csproj"
+      "path": "../CExchange.Services.Users.Infrastructure/CExchange.Services.Users.Infrastructure.csproj",
+      "msbuildProject": "../CExchange.Services.Users.Infrastructure/CExchange.Services.Users.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9042,14 +9042,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.User.Application\\CExchange.Services.Users.Application.csproj": {
-              "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.User.Application\\CExchange.Services.Users.Application.csproj"
-            },
-            "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.User.Infrastructure\\CExchange.Services.Users.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.User.Infrastructure\\CExchange.Services.Users.Infrastructure.csproj"
+            "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Application\\CExchange.Services.Users.Application.csproj": {
+              "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Application\\CExchange.Services.Users.Application.csproj"
             },
             "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Core\\CExchange.Services.Users.Core.csproj": {
               "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Core\\CExchange.Services.Users.Core.csproj"
+            },
+            "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Infrastructure\\CExchange.Services.Users.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Infrastructure\\CExchange.Services.Users.Infrastructure.csproj"
             }
           }
         }

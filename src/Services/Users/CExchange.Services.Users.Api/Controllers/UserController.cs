@@ -1,10 +1,11 @@
 ﻿
-using CExchange.Services.Users.Application.Command;
+using CExchange.Services.Users.Application.Commands;
 using CExchange.Services.Users.Application.DTO;
 using CExchange.Services.Users.Application.PasswordSecurity;
 using CExchange.Services.Users.Application.Queries;
 using Convey.CQRS.Commands;
 using Convey.CQRS.Queries;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -30,6 +31,7 @@ namespace CExchange.Services.Users.Api.Controllers
         }
 
         [HttpGet("{userId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<UserDetailsDto>> Get(Guid userId)
         {
             var user = await _getUserHandler.HandleAsync(new GetUser { UserId = userId });
@@ -41,6 +43,7 @@ namespace CExchange.Services.Users.Api.Controllers
         }
 
         [HttpGet]
+       
         public async Task<ActionResult<IEnumerable<UserDto>>> Get([FromQuery] GetUsers query) => Ok(await _getUsersHandler.HandleAsync(query));
 
         [HttpPost("sign-up")]

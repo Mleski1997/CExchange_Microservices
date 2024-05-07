@@ -12,4 +12,8 @@
     <PackageReference Include="Convey.CQRS.Queries" Version="1.1.448" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CExchange.Services.Users.Core\CExchange.Services.Users.Core.csproj" />
+  </ItemGroup>
+
 </Project>

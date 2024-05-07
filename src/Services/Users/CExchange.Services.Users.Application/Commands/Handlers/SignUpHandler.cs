@@ -14,9 +14,9 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
     internal sealed class SignUpHandler : ICommandHandler<SignUp>
     {
         private readonly IUserRepository _userRepository;
-        private readonly IPasswordManger _passwordManger;
+        private readonly IPasswordManager _passwordManger;
 
-        public SignUpHandler(IUserRepository userRepository, IPasswordManger passwordManger)
+        public SignUpHandler(IUserRepository userRepository, IPasswordManager passwordManger)
         {
             _userRepository = userRepository;
             _passwordManger = passwordManger;
@@ -40,7 +40,7 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
             }
 
             var securedPassword = _passwordManger.Secure(command.Password);
-            user = new User (command.UserId, command.Email, command.Name, command.LastName, command.Password);
+            user = new User(command.UserId, command.Email, command.Name, command.LastName, command.Role, securedPassword);
 
             await _userRepository.AddAsync(user);
         }

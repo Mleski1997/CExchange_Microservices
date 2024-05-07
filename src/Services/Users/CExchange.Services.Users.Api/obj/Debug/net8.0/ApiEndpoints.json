@@ -61,7 +61,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CExchange.Services.Users.Application.Command.SignIn",
+        "Type": "CExchange.Services.Users.Application.Commands.SignIn",
         "IsRequired": true
       }
     ],
@@ -87,7 +87,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CExchange.Services.Users.Application.Command.SignUp",
+        "Type": "CExchange.Services.Users.Application.Commands.SignUp",
         "IsRequired": true
       }
     ],

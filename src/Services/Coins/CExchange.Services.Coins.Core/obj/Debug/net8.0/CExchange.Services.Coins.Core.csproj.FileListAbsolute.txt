@@ -1,5 +1,0 @@
-C:\Users\micha\CExchange\src\Services\Coins\CExchange.Services.Coins.Core\obj\Debug\net8.0\CExchange.Services.Coins.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\micha\CExchange\src\Services\Coins\CExchange.Services.Coins.Core\obj\Debug\net8.0\CExchange.Services.Coins.Core.AssemblyInfoInputs.cache
-C:\Users\micha\CExchange\src\Services\Coins\CExchange.Services.Coins.Core\obj\Debug\net8.0\CExchange.Services.Coins.Core.AssemblyInfo.cs
-C:\Users\micha\CExchange\src\Services\Coins\CExchange.Services.Coins.Core\obj\Debug\net8.0\CExchange.Services.Coins.Core.csproj.CoreCompileInputs.cache
-C:\Users\micha\CExchange\src\Services\Coins\CExchange.Services.Coins.Core\obj\Debug\net8.0\CExchange.Services.Coins.Core.sourcelink.json

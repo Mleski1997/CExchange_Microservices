@@ -17,6 +17,29 @@ namespace CExchange.Services.Wallets.Core.Entities
         public decimal TotalBalance => CalculateTotalBalance();
         public decimal TotalCryptoBalance => CryptoBalances.Sum(x => x.Amount);
         public decimal TotalFiatBalance => FiatBalances.Sum(c => c.Amount);
-     
-    }
+
+
+        public Wallet()
+        {
+            Adress = GenerateWalletAdress();
+            FiatBalances = new List<FiatBalance>();
+            CryptoBalances = new List<CryptoBalance>();
+        }
+
+
+        private decimal CalculateTotalBalance()
+        {
+            decimal totalFiatInDefaultCurrency = FiatBalances.Sum(f => f.Amount);
+            decimal totalCryptoInDefaultCurrency = CryptoBalances.Sum(c => c.Amount);
+
+            return totalFiatInDefaultCurrency + totalCryptoInDefaultCurrency;
+        }
+
+        private string GenerateWalletAdress() 
+        {
+            var random = new Random();
+            return new string(Enumerable.Repeat("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 16)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+    } 
 }

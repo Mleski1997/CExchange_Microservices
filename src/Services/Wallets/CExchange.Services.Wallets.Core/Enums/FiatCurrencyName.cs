@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Wallets.Core.Enums
 {
-    internal enum FiatCurrencyName
+    public enum FiatCurrencyName
     {
         [CurrencySymbol("USD")]
         United_States_Dolar,

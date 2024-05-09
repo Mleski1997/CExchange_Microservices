@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace CExchange.Services.Wallets.Core.Attributes
 {
     [AttributeUsage(AttributeTargets.Field)]
-    internal class CryptoSymbolAttribute : Attribute
+    internal class CurrencySymbolAttribute : Attribute
     {
         public string Symbol { get; set; }
 
-        public CryptoSymbolAttribute(string symbol)
+        public CurrencySymbolAttribute(string symbol)
         {
             Symbol = symbol;
             

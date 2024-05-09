@@ -37,12 +37,6 @@ namespace CExchange.Services.Users.Infrastructure.DAL.Configurations
                .HasConversion(x => x.Value, x => new Role(x))
                .IsRequired()
                .HasMaxLength(30);
-
-
-
-
-
-
         }
     }
 }

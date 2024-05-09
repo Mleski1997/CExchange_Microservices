@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CExchange.Services.Wallets.Core.Enum
+namespace CExchange.Services.Wallets.Core.Enums
 {
-    internal enum CryptoCurrencyName 
+    public enum CryptoCurrencyName 
     {
         [CurrencySymbol("BTC")]
         Bitcoin,

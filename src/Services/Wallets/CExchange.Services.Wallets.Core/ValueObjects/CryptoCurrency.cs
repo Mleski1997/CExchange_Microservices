@@ -3,7 +3,7 @@ using CExchange.Services.Wallets.Core.Extensions;
 
 namespace CExchange.Services.Wallets.Core.ValueObjects
 {
-    internal class CryptoCurrency
+    public class CryptoCurrency
     {
         public CryptoCurrencyName Name { get; set; }
         public string Symbol { get; set; }

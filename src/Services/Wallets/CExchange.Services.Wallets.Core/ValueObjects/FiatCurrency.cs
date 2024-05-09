@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Wallets.Core.ValueObjects
 {
-    internal class FiatCurrency
+    public class FiatCurrency
     {
         public FiatCurrencyName Name { get; set; }
         public string Symbol { get; set; }

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CExchange.Services.Wallets.Api.props" />
+</Project>

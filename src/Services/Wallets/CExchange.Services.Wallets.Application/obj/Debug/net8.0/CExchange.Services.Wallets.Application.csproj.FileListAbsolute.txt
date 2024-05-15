@@ -1,0 +1,16 @@
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\bin\Debug\net8.0\CExchange.Services.Wallets.Application.deps.json
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\bin\Debug\net8.0\CExchange.Services.Wallets.Application.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\bin\Debug\net8.0\CExchange.Services.Wallets.Application.pdb
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\bin\Debug\net8.0\CExchange.Services.Wallets.Core.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\bin\Debug\net8.0\CExchange.Services.Wallets.Core.pdb
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.csproj.AssemblyReference.cache
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.AssemblyInfoInputs.cache
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.AssemblyInfo.cs
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.csproj.CoreCompileInputs.cache
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.sourcelink.json
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchang.47F7CF08.Up2Date
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\refint\CExchange.Services.Wallets.Application.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\CExchange.Services.Wallets.Application.pdb
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Application\obj\Debug\net8.0\ref\CExchange.Services.Wallets.Application.dll

@@ -13,21 +13,9 @@ namespace CExchange.Services.Wallets.Infrastructure.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<Wallet> builder)
         {
-            builder.HasKey(x => x.Adress);
-            builder.Property(w => w.Adress)
-                .IsRequired()
-                .HasMaxLength(16);
-            builder.Property(w => w.WalletName)
-                .IsRequired()
-                .HasMaxLength (20);
-            builder.Property(w => w.UserId)
-                .IsRequired();
-            builder.HasMany(w => w.FiatBalances)
-                .WithOne()
-                .HasForeignKey("WalletAdress");
-            builder.HasMany(w => w.CryptoBalances)
-                .WithOne()
-                .HasForeignKey("WalletAdress");
+            builder.HasKey(w => w.Address);
+            builder.Property(w => w.Address).IsRequired().HasMaxLength(16);
+            builder.Property(w => w.WalletName).IsRequired().HasMaxLength(50);
         }
     }
 }

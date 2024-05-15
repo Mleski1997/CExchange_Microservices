@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "CExchange.Services.Wallets.Api.Controllers.WalletController",
+    "Method": "Post",
+    "RelativePath": "Wallet/add-wallet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CExchange.Services.Wallets.Application.Commands.AddWallet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

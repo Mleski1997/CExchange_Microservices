@@ -1,0 +1,12 @@
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\bin\Debug\net8.0\CExchange.Services.Wallets.Core.deps.json
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\bin\Debug\net8.0\CExchange.Services.Wallets.Core.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\bin\Debug\net8.0\CExchange.Services.Wallets.Core.pdb
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.AssemblyInfoInputs.cache
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.AssemblyInfo.cs
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.csproj.CoreCompileInputs.cache
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.sourcelink.json
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\refint\CExchange.Services.Wallets.Core.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\CExchange.Services.Wallets.Core.pdb
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Core\obj\Debug\net8.0\ref\CExchange.Services.Wallets.Core.dll

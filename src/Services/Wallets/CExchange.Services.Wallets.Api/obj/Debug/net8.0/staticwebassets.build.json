@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FCPUmtss4cf04lXMyRgXRYhDiOcUR05otL0UkCrynNw=",
+  "Source": "CExchange.Services.Wallets.Api",
+  "BasePath": "_content/CExchange.Services.Wallets.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,4 +1,5 @@
 ﻿using CExchange.Services.Users.Core.Abstractions;
+using CExchange.Services.Users.Core.Entities;
 using CExchange.Services.Users.Core.Repositories;
 using CExchange.Services.Users.Infrastructure.Auth;
 using CExchange.Services.Users.Infrastructure.DAL;
@@ -6,6 +7,7 @@ using CExchange.Services.Users.Infrastructure.PasswordSecurity;
 using CExchange.Services.Users.Infrastructure.Repositories;
 using CExchange.Services.Users.Infrastructure.Time;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +32,7 @@ namespace CExchange.Services.Users.Infrastructure
             services.AddAuth(configuration);
             services.AddHttpContextAccessor();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             services.AddSingleton<IClock, Clock>();
             services.AddSecurity();
 

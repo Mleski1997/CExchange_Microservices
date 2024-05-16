@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "CExchange.Services.Wallets.Api.Controllers.WalletController",
+    "Method": "Get",
+    "RelativePath": "Wallet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Adress",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CExchange.Services.Wallets.Application.DTO.WalletDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CExchange.Services.Wallets.Api.Controllers.WalletController",
     "Method": "Post",
     "RelativePath": "Wallet/add-wallet",
     "HttpMethod": "POST",

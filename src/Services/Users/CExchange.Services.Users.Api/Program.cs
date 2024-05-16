@@ -6,10 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddConvey()
-                 .AddApplication();
+                 .AddApplication()
+                 .AddInfrastructure(builder.Configuration);
                 
 
-builder.Services.AddInfrastructure(builder.Configuration);
 
 
 
@@ -32,6 +32,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseInfrastructure();
+app.UserInfrastructure();
 
 app.Run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FaealqWzwA/PGA45hud2KM7Op1ZulaMCEj8iB4fTl2Qi31UGkkT4poZf+J9JULSwP9Qad1P1SlMUqqOraNONAA==",
+  "dgSpecHash": "skGoIQSqY8rhCpVnX/jeFCwHdTKT27JfWsGukkZL7G/UkkBwjrHgF+wQYQYkuvtiWvpc2cKZMc/mfalLi7GuQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\CExchange\\src\\Services\\Users\\CExchange.Services.Users.Application\\CExchange.Services.Users.Application.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\micha\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\convey\\1.1.448\\convey.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.commands\\1.1.448\\convey.cqrs.commands.1.1.448.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.events\\1.1.448\\convey.cqrs.events.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.queries\\1.1.448\\convey.cqrs.queries.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.4\\microsoft.aspnetcore.cryptography.internal.8.0.4.nupkg.sha512",

@@ -152,3 +152,9 @@ C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin
 C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\Convey.CQRS.Events.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\Convey.MessageBrokers.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\Convey.MessageBrokers.CQRS.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\Convey.MessageBrokers.RabbitMQ.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\Polly.dll
+C:\Users\micha\CExchange\src\Services\Wallets\CExchange.Services.Wallets.Api\bin\Debug\net8.0\RabbitMQ.Client.dll

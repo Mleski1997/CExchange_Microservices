@@ -5,17 +5,20 @@ using Convey;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddConvey()
-                 .AddApplication();
+                 .AddApplication()
+                 .AddInfrastructure(builder.Configuration);
+
 // Add services to the container.
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddInfrastructure(builder.Configuration);
+
 
 var app = builder.Build();
 
+app.UseInfrastructure();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

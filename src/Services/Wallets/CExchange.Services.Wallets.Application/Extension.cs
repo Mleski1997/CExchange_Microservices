@@ -1,5 +1,7 @@
 ﻿using Convey;
 using Convey.CQRS.Commands;
+using Convey.CQRS.Events;
+using Convey.CQRS.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +12,11 @@ namespace CExchange.Services.Wallets.Application
 {
     public static class Extension
     {
-        public static IConveyBuilder AddApplication (this IConveyBuilder builder)
+        public static IConveyBuilder AddApplication(this IConveyBuilder builder)
             => builder
-                .AddCommandHandlers();
+                .AddCommandHandlers()
+                .AddQueryHandlers()
+                .AddEventHandlers();
 
     }
 }

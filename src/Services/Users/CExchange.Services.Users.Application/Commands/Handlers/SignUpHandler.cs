@@ -1,8 +1,10 @@
-﻿using CExchange.Services.Users.Application.Exceptions;
+﻿using CExchange.Services.Users.Application.Events;
+using CExchange.Services.Users.Application.Exceptions;
 using CExchange.Services.Users.Application.PasswordSecurity;
 using CExchange.Services.Users.Core.Entities;
 using CExchange.Services.Users.Core.Repositories;
 using Convey.CQRS.Commands;
+using Convey.CQRS.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +17,13 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
     {
         private readonly IUserRepository _userRepository;
         private readonly IPasswordManager _passwordManger;
+        private readonly IEventDispatcher _eventDispatcher;
 
-        public SignUpHandler(IUserRepository userRepository, IPasswordManager passwordManger)
+        public SignUpHandler(IUserRepository userRepository, IPasswordManager passwordManger, IEventDispatcher eventDispatcher)
         {
             _userRepository = userRepository;
             _passwordManger = passwordManger;
+            _eventDispatcher = eventDispatcher;
         }
         public async Task HandleAsync(SignUp command, CancellationToken cancellationToken = default)
         {
@@ -43,6 +47,9 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
             user = new User(command.UserId, command.Email, command.Name, command.LastName, command.Role, securedPassword);
 
             await _userRepository.AddAsync(user);
+
+            var signedUpEvent = new SignedUp(user.UserId, user.Email, user.Name, user.LastName, user.Role);
+            await _eventDispatcher.PublishAsync(signedUpEvent);
         }
     }
 }

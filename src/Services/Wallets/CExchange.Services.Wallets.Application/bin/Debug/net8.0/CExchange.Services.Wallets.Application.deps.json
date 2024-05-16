@@ -11,7 +11,9 @@
           "CExchange.Services.Wallets.Core": "1.0.0",
           "Convey": "1.1.448",
           "Convey.CQRS.Commands": "1.1.448",
-          "Convey.CQRS.Queries": "1.1.448"
+          "Convey.CQRS.Events": "1.1.448",
+          "Convey.CQRS.Queries": "1.1.448",
+          "Convey.MessageBrokers": "1.1.448"
         },
         "runtime": {
           "CExchange.Services.Wallets.Application.dll": {}
@@ -40,12 +42,34 @@
           }
         }
       },
+      "Convey.CQRS.Events/1.1.448": {
+        "dependencies": {
+          "Convey": "1.1.448"
+        },
+        "runtime": {
+          "lib/net6.0/Convey.CQRS.Events.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Convey.CQRS.Queries/1.1.448": {
         "dependencies": {
           "Convey": "1.1.448"
         },
         "runtime": {
           "lib/net6.0/Convey.CQRS.Queries.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Convey.MessageBrokers/1.1.448": {
+        "dependencies": {
+          "Convey": "1.1.448"
+        },
+        "runtime": {
+          "lib/net6.0/Convey.MessageBrokers.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -781,12 +805,26 @@
       "path": "convey.cqrs.commands/1.1.448",
       "hashPath": "convey.cqrs.commands.1.1.448.nupkg.sha512"
     },
+    "Convey.CQRS.Events/1.1.448": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iHvO7nB+ZnYkSFvDEJBnuMG2z7ZQtyXzibZVxxp/q+cyJYX7/CQorSDSDc0M7cEwA20VFiR7lCkINdx5HbUaIA==",
+      "path": "convey.cqrs.events/1.1.448",
+      "hashPath": "convey.cqrs.events.1.1.448.nupkg.sha512"
+    },
     "Convey.CQRS.Queries/1.1.448": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-OzFNIKM8Ig/4LUbSt1kfAjdTZ4T73i3tjoy/xhzMcCT2ncspG5oVlAyd+NesgppCQhP/q5rNaNiNm50sTl4kSg==",
       "path": "convey.cqrs.queries/1.1.448",
       "hashPath": "convey.cqrs.queries.1.1.448.nupkg.sha512"
+    },
+    "Convey.MessageBrokers/1.1.448": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bxKUdKUyCPo+QFkgMidERQluXfd0hxRslrquvJNL/qk/82zSR0OTfPwnbylUZfeZrFPOzIphcoz6T/7f0rUFcA==",
+      "path": "convey.messagebrokers/1.1.448",
+      "hashPath": "convey.messagebrokers.1.1.448.nupkg.sha512"
     },
     "Figgle/0.4.0": {
       "type": "package",

@@ -25,5 +25,8 @@ namespace CExchange.Services.Wallets.Infrastructure.Repositories
         }
 
         public Task<bool> AddressExistsAsync(string Address) => _context.Wallets.AnyAsync(x => x.Address == Address);
+
+        public Task<Wallet> GetByAddresWalllet(string Address) => _context.Wallets.SingleOrDefaultAsync(x => x.Address == Address);
+       
     }
 }

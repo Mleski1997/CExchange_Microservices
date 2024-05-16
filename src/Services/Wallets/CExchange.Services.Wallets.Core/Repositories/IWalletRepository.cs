@@ -11,5 +11,6 @@ namespace CExchange.Services.Wallets.Core.Repositories
     {
         Task AddAsync (Wallet wallet);
         Task<bool> AddressExistsAsync(string Address);
+        Task<Wallet> GetByAddresWalllet(string Address);
     }
 }

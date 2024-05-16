@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mFCwA2cCE1SNwwJYpYwxTozMH8goCcabcgDbsU3yBFiHQLduaR7O5U5EcuoTu1Di8OBkGmml0LYh09eI7fIeWA==",
+  "dgSpecHash": "czGoNhynuBnpjnpwrELkikr1RTpWP99rC2iZ6ayqzRmnOyvCYBpjwu1IecRxPexZSxmwpo7Hkm4FzJ0jhoZBtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\CExchange\\src\\Services\\Wallets\\CExchange.Services.Wallets.Application\\CExchange.Services.Wallets.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\micha\\.nuget\\packages\\convey\\1.1.448\\convey.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.commands\\1.1.448\\convey.cqrs.commands.1.1.448.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.events\\1.1.448\\convey.cqrs.events.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\convey.cqrs.queries\\1.1.448\\convey.cqrs.queries.1.1.448.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\convey.messagebrokers\\1.1.448\\convey.messagebrokers.1.1.448.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",

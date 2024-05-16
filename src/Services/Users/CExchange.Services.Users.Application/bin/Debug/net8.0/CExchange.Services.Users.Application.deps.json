@@ -11,6 +11,7 @@
           "CExchange.Services.Users.Core": "1.0.0",
           "Convey": "1.1.448",
           "Convey.CQRS.Commands": "1.1.448",
+          "Convey.CQRS.Events": "1.1.448",
           "Convey.CQRS.Queries": "1.1.448"
         },
         "runtime": {
@@ -69,6 +70,17 @@
         },
         "runtime": {
           "lib/net6.0/Convey.CQRS.Commands.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Convey.CQRS.Events/1.1.448": {
+        "dependencies": {
+          "Convey": "1.1.448"
+        },
+        "runtime": {
+          "lib/net6.0/Convey.CQRS.Events.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1305,6 +1317,13 @@
       "sha512": "sha512-3rqpuQRIi2DC+BtoBdoANxsUMbW9FthckxPpm5RFrYle3o8sQHSLk+86Gi0ZLygRa/vXVIX+ogNqOAZ1g1rDLA==",
       "path": "convey.cqrs.commands/1.1.448",
       "hashPath": "convey.cqrs.commands.1.1.448.nupkg.sha512"
+    },
+    "Convey.CQRS.Events/1.1.448": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iHvO7nB+ZnYkSFvDEJBnuMG2z7ZQtyXzibZVxxp/q+cyJYX7/CQorSDSDc0M7cEwA20VFiR7lCkINdx5HbUaIA==",
+      "path": "convey.cqrs.events/1.1.448",
+      "hashPath": "convey.cqrs.events.1.1.448.nupkg.sha512"
     },
     "Convey.CQRS.Queries/1.1.448": {
       "type": "package",

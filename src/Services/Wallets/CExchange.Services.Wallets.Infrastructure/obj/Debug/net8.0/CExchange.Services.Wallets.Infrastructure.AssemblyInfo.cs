@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CExchange.Services.Wallets.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eb062bc9b5b803d155caed7cc5dc9d2df98508e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81601efbd13b85c96187695fe7fca39241f5b9ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("CExchange.Services.Wallets.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CExchange.Services.Wallets.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

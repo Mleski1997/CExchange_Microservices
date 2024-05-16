@@ -74,6 +74,18 @@
           "lib/net6.0/Convey.CQRS.Commands.dll": {}
         }
       },
+      "Convey.CQRS.Events/1.1.448": {
+        "type": "package",
+        "dependencies": {
+          "Convey": "1.1.448"
+        },
+        "compile": {
+          "lib/net6.0/Convey.CQRS.Events.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Convey.CQRS.Events.dll": {}
+        }
+      },
       "Convey.CQRS.Queries/1.1.448": {
         "type": "package",
         "dependencies": {
@@ -2415,6 +2427,18 @@
         "convey.cqrs.commands.1.1.448.nupkg.sha512",
         "convey.cqrs.commands.nuspec",
         "lib/net6.0/Convey.CQRS.Commands.dll"
+      ]
+    },
+    "Convey.CQRS.Events/1.1.448": {
+      "sha512": "iHvO7nB+ZnYkSFvDEJBnuMG2z7ZQtyXzibZVxxp/q+cyJYX7/CQorSDSDc0M7cEwA20VFiR7lCkINdx5HbUaIA==",
+      "type": "package",
+      "path": "convey.cqrs.events/1.1.448",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "convey.cqrs.events.1.1.448.nupkg.sha512",
+        "convey.cqrs.events.nuspec",
+        "lib/net6.0/Convey.CQRS.Events.dll"
       ]
     },
     "Convey.CQRS.Queries/1.1.448": {
@@ -7311,6 +7335,7 @@
       "CExchange.Services.Users.Core >= 1.0.0",
       "Convey >= 1.1.448",
       "Convey.CQRS.Commands >= 1.1.448",
+      "Convey.CQRS.Events >= 1.1.448",
       "Convey.CQRS.Queries >= 1.1.448"
     ]
   },
@@ -7375,6 +7400,10 @@
             "version": "[1.1.448, )"
           },
           "Convey.CQRS.Commands": {
+            "target": "Package",
+            "version": "[1.1.448, )"
+          },
+          "Convey.CQRS.Events": {
             "target": "Package",
             "version": "[1.1.448, )"
           },

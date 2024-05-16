@@ -30,7 +30,10 @@ namespace CExchange.Services.Wallets.Infrastructure.DAL.Handlers
             return new WalletDto
             {
                 Adress = wallet.Address,
-                TotalBalance = wallet.TotalBalance,        
+                WalletName = wallet.WalletName,
+                CryptoCurrences = wallet.CryptoCurrences,
+                FiatCurrences = wallet.FiatCurrences,
+                TotalBalance = wallet.TotalBalance,
             };
         }
     }

@@ -3,7 +3,7 @@ using Convey.MessageBrokers;
 
 namespace CExchange.Services.Wallets.Application.External
 {
-    [Message("identity")]
+    [Message("user")]
     public class SignedUp : IEvent
     {
         public Guid UserId { get; set; }

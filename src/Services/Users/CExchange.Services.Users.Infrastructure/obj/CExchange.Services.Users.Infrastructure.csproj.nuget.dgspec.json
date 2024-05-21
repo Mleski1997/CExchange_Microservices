@@ -70,6 +70,18 @@
             "Convey.CQRS.Queries": {
               "target": "Package",
               "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers.CQRS": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers.RabbitMQ": {
+              "target": "Package",
+              "version": "[1.1.448, )"
             }
           },
           "imports": [
@@ -240,7 +252,35 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Convey": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Convey.CQRS.Queries": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Docs.Swagger": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.HTTP": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers.CQRS": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers.Outbox": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.MessageBrokers.Outbox.EntityFramework": {
               "target": "Package",
               "version": "[1.1.448, )"
             },
@@ -248,33 +288,41 @@
               "target": "Package",
               "version": "[1.1.448, )"
             },
+            "Convey.WebApi": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.WebApi.CQRS": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.WebApi.Swagger": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[6.8.1, )"
+              "version": "[8.0.5, )"
             }
           },
           "imports": [

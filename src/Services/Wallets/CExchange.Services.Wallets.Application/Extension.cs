@@ -16,7 +16,9 @@ namespace CExchange.Services.Wallets.Application
             => builder
                 .AddCommandHandlers()
                 .AddQueryHandlers()
-                .AddEventHandlers();
+                .AddEventHandlers()
+                .AddInMemoryCommandDispatcher()
+                .AddInMemoryEventDispatcher();
 
     }
 }

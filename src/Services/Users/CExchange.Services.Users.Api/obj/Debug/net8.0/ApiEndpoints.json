@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "ContainingType": "UserController",
     "Method": "Get",
     "RelativePath": "User",
     "HttpMethod": "GET",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "ContainingType": "UserController",
     "Method": "Get",
     "RelativePath": "User/{userId}",
     "HttpMethod": "GET",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "ContainingType": "UserController",
     "Method": "Post",
     "RelativePath": "User/sign-in",
     "HttpMethod": "POST",
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "ContainingType": "CExchange.Services.Users.Api.Controllers.UserController",
+    "ContainingType": "UserController",
     "Method": "Post",
     "RelativePath": "User/sign-up",
     "HttpMethod": "POST",

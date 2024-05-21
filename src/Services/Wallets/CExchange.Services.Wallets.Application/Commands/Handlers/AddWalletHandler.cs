@@ -30,6 +30,7 @@ namespace CExchange.Services.Wallets.Application.Commands.Handlers
             };
 
             await _walletRepository.AddAsync(wallet);
+
             
         }
 

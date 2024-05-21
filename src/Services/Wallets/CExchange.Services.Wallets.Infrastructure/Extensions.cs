@@ -15,6 +15,8 @@ using CExchange.Services.Wallets.Application.Commands;
 using CExchange.Services.Wallets.Application.Commands.Handlers;
 using Convey.CQRS.Events;
 using CExchange.Services.Wallets.Application.External.Handlers;
+using CExchange.Services.Wallets.Application.Services;
+using CExchange.Services.Wallets.Infrastructure.Services;
 
 namespace CExchange.Services.Wallets.Infrastructure
 {
@@ -27,6 +29,7 @@ namespace CExchange.Services.Wallets.Infrastructure
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
             builder.Services.AddScoped<IWalletRepository, WalletRepository>();
+            builder.Services.AddTransient<IMessageBroker, MessageBroker>();
             
 
             builder.AddRabbitMq();

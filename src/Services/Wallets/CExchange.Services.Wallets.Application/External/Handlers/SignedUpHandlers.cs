@@ -1,29 +1,45 @@
-﻿using CExchange.Services.Wallets.Application.Commands;
-using CExchange.Services.Wallets.Application.Commands.Handlers;
-using Convey.CQRS.Commands;
+﻿using CExchange.Services.Wallets.Application.Services;
+using CExchange.Services.Wallets.Core.Entities;
+using CExchange.Services.Wallets.Core.Repositories;
 using Convey.CQRS.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CExchange.Services.Wallets.Application.External.Handlers
 {
     public class SignedUpHandlers : IEventHandler<SignedUp>
     {
-        private readonly ICommandDispatcher _commandDispatcher;
+        private readonly IWalletRepository _walletRepository;
 
-        public SignedUpHandlers(ICommandDispatcher commandDispatcher)
+        public SignedUpHandlers(IWalletRepository walletRepository)
         {
-            _commandDispatcher = commandDispatcher;
+            _walletRepository = walletRepository;
         }
-
         public async Task HandleAsync(SignedUp @event, CancellationToken cancellationToken = default)
         {
-            var addWalletCommand = new AddWallet(@event.UserId, "Wallet1");
-            await _commandDispatcher.SendAsync(addWalletCommand, cancellationToken);
-           
+            var wallet = new Wallet
+            {
+                UserId = @event.UserId,
+                WalletName = $"{@event.Name}",
+                Address = await GenerateWalletAddress()
+            };
+
+            await _walletRepository.AddAsync(wallet);
+            
+       
+        }
+
+
+        private async Task<string> GenerateWalletAddress()
+        {
+            string address;
+            var random = new Random();
+            do
+            {
+                address = new string(Enumerable.Repeat("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 16)
+                   .Select(s => s[random.Next(s.Length)]).ToArray());
+            }
+            while (await _walletRepository.AddressExistsAsync(address));
+
+            return address;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CExchange.Services.Users.Application.PasswordSecurity;
 using Convey;
 using Convey.CQRS.Commands;
+using Convey.CQRS.Events;
 using Convey.CQRS.Queries;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +17,9 @@ namespace CExchange.Services.Users.Application
         public static IConveyBuilder AddApplication(this IConveyBuilder builder) =>
             builder
             .AddCommandHandlers()
-            .AddQueryHandlers();
+            .AddQueryHandlers()
+            .AddEventHandlers()
+            .AddInMemoryCommandDispatcher()
+            .AddInMemoryEventDispatcher();
     }
 }

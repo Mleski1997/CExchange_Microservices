@@ -15,21 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{47475AD3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Users.Core", "src\Services\Users\CExchange.Services.Users.Core\CExchange.Services.Users.Core.csproj", "{E8C84F3F-C0AC-4861-9A4C-BED1C03C930F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Users.Api", "src\Services\Users\CExchange.Services.Users.Api\CExchange.Services.Users.Api.csproj", "{2571F366-2234-4137-9CBF-34478026FB1C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Users.Infrastructure", "src\Services\Users\CExchange.Services.Users.Infrastructure\CExchange.Services.Users.Infrastructure.csproj", "{0451DFEF-7C9E-4B1C-9F8E-D1E8F45336E4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Users.Application", "src\Services\Users\CExchange.Services.Users.Application\CExchange.Services.Users.Application.csproj", "{C35D1C59-2159-4998-8DA7-31D661559810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallets.Core", "src\Services\Wallets\CExchange.Services.Wallets.Core\CExchange.Services.Wallets.Core.csproj", "{C076DBBF-DDDB-4789-B5AC-A8072CB06D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Wallets.Core", "src\Services\Wallets\CExchange.Services.Wallets.Core\CExchange.Services.Wallets.Core.csproj", "{C076DBBF-DDDB-4789-B5AC-A8072CB06D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallets.Application", "src\Services\Wallets\CExchange.Services.Wallets.Application\CExchange.Services.Wallets.Application.csproj", "{B4574D68-3081-4AA9-A9D1-985EDDFC366B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Wallets.Application", "src\Services\Wallets\CExchange.Services.Wallets.Application\CExchange.Services.Wallets.Application.csproj", "{B4574D68-3081-4AA9-A9D1-985EDDFC366B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallets.Infrastructure", "src\Services\Wallets\CExchange.Services.Wallets.Infrastructure\CExchange.Services.Wallets.Infrastructure.csproj", "{2186EE34-AF14-4FE4-BF8B-E9A01AB042BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Wallets.Infrastructure", "src\Services\Wallets\CExchange.Services.Wallets.Infrastructure\CExchange.Services.Wallets.Infrastructure.csproj", "{2186EE34-AF14-4FE4-BF8B-E9A01AB042BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Wallets.Api", "src\Services\Wallets\CExchange.Services.Wallets.Api\CExchange.Services.Wallets.Api.csproj", "{2A67925A-5B1E-4E31-A8AF-19A05B663CDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Wallets.Api", "src\Services\Wallets\CExchange.Services.Wallets.Api\CExchange.Services.Wallets.Api.csproj", "{2A67925A-5B1E-4E31-A8AF-19A05B663CDE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CryptoAssets", "CryptoAssets", "{84A6501F-1E03-4A7E-BF7D-8A7E478E4066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CExchange.Services.Users.Api", "src\Services\Users\CExchange.Services.Users.Api\CExchange.Services.Users.Api\CExchange.Services.Users.Api.csproj", "{DF3BC775-3F61-4B79-BC5E-EF76801449AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,6 @@ Global
 		{E8C84F3F-C0AC-4861-9A4C-BED1C03C930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C84F3F-C0AC-4861-9A4C-BED1C03C930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C84F3F-C0AC-4861-9A4C-BED1C03C930F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2571F366-2234-4137-9CBF-34478026FB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2571F366-2234-4137-9CBF-34478026FB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2571F366-2234-4137-9CBF-34478026FB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2571F366-2234-4137-9CBF-34478026FB1C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0451DFEF-7C9E-4B1C-9F8E-D1E8F45336E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0451DFEF-7C9E-4B1C-9F8E-D1E8F45336E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0451DFEF-7C9E-4B1C-9F8E-D1E8F45336E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +65,10 @@ Global
 		{2A67925A-5B1E-4E31-A8AF-19A05B663CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A67925A-5B1E-4E31-A8AF-19A05B663CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A67925A-5B1E-4E31-A8AF-19A05B663CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3BC775-3F61-4B79-BC5E-EF76801449AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3BC775-3F61-4B79-BC5E-EF76801449AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3BC775-3F61-4B79-BC5E-EF76801449AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3BC775-3F61-4B79-BC5E-EF76801449AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,7 +79,6 @@ Global
 		{C7B05377-5B8D-4D1B-ACD3-1B4CB6E61FA7} = {022D3343-C5A2-41EE-ACC7-00DE78E7F776}
 		{47475AD3-C6FA-4381-B871-628B033DD9BB} = {022D3343-C5A2-41EE-ACC7-00DE78E7F776}
 		{E8C84F3F-C0AC-4861-9A4C-BED1C03C930F} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
-		{2571F366-2234-4137-9CBF-34478026FB1C} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
 		{0451DFEF-7C9E-4B1C-9F8E-D1E8F45336E4} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
 		{C35D1C59-2159-4998-8DA7-31D661559810} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
 		{C076DBBF-DDDB-4789-B5AC-A8072CB06D09} = {33960DF1-31B3-40EA-A288-315470D8FFEA}
@@ -87,6 +86,7 @@ Global
 		{2186EE34-AF14-4FE4-BF8B-E9A01AB042BA} = {33960DF1-31B3-40EA-A288-315470D8FFEA}
 		{2A67925A-5B1E-4E31-A8AF-19A05B663CDE} = {33960DF1-31B3-40EA-A288-315470D8FFEA}
 		{84A6501F-1E03-4A7E-BF7D-8A7E478E4066} = {022D3343-C5A2-41EE-ACC7-00DE78E7F776}
+		{DF3BC775-3F61-4B79-BC5E-EF76801449AE} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C0739A6-B4B2-4D61-89E6-99409A04142F}

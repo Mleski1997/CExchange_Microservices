@@ -11,6 +11,8 @@
           "CExchange.Services.Users.Application": "1.0.0",
           "CExchange.Services.Users.Core": "1.0.0",
           "Convey": "1.1.448",
+          "Convey.CQRS.Commands": "1.1.448",
+          "Convey.CQRS.Events": "1.1.448",
           "Convey.CQRS.Queries": "1.1.448",
           "Convey.Docs.Swagger": "1.1.448",
           "Convey.HTTP": "1.1.448",

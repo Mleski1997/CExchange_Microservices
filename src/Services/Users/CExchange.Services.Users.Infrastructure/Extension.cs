@@ -1,5 +1,4 @@
 ﻿using CExchange.Services.Users.Application;
-using CExchange.Services.Users.Application.Commands.Handlers;
 using CExchange.Services.Users.Application.Commands;
 using CExchange.Services.Users.Application.Services;
 using CExchange.Services.Users.Core.Abstractions;
@@ -12,19 +11,14 @@ using CExchange.Services.Users.Infrastructure.Repositories;
 using CExchange.Services.Users.Infrastructure.Services;
 using CExchange.Services.Users.Infrastructure.Time;
 using Convey;
-using Convey.CQRS.Commands;
-using Convey.CQRS.Events;
-using Convey.Docs.Swagger;
+using Convey.MessageBrokers.CQRS;
 using Convey.MessageBrokers.RabbitMQ;
-using Convey.WebApi;
 using Convey.WebApi.CQRS;
-using Convey.WebApi.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using CExchange.Services.Users.Application.Events;
 
 namespace CExchange.Services.Users.Infrastructure
 {
@@ -44,6 +38,7 @@ namespace CExchange.Services.Users.Infrastructure
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddSingleton<IClock, Clock>();
             builder.Services.AddTransient<IMessageBroker, MessageBroker>();
+           
          
            
             builder.Services.AddSecurity();
@@ -61,7 +56,8 @@ namespace CExchange.Services.Users.Infrastructure
             app.UsePublicContracts<ContractAttribute>();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseRabbitMq();
+            app.UseRabbitMq()
+               .SubscribeCommand<SignUp>();
 
             return app;
         }

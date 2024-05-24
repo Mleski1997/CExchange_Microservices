@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Mvc;
 using CExchange.Services.Wallets.Core.Repositories;
 using CExchange.Services.Wallets.Infrastructure.Repositories;
 using Convey;
@@ -10,11 +9,6 @@ using Convey.MessageBrokers.RabbitMQ;
 using Microsoft.AspNetCore.Builder;
 using CExchange.Services.Wallets.Application.External;
 using Convey.MessageBrokers.CQRS;
-using Convey.CQRS.Commands;
-using CExchange.Services.Wallets.Application.Commands;
-using CExchange.Services.Wallets.Application.Commands.Handlers;
-using Convey.CQRS.Events;
-using CExchange.Services.Wallets.Application.External.Handlers;
 using CExchange.Services.Wallets.Application.Services;
 using CExchange.Services.Wallets.Infrastructure.Services;
 

@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseInfrastructure();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -29,6 +29,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseInfrastructure();
 
 app.MapControllers();
 

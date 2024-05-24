@@ -256,6 +256,14 @@
               "target": "Package",
               "version": "[1.1.448, )"
             },
+            "Convey.CQRS.Commands": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.CQRS.Events": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Convey.CQRS.Queries": {
               "target": "Package",
               "version": "[1.1.448, )"

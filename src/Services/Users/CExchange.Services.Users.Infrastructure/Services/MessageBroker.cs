@@ -17,19 +17,18 @@ namespace CExchange.Services.Users.Infrastructure.Services
         {
             _busPublisher = busPublisher;
         }
-
         public Task PublishAsync(params IEvent[] events) => PublishAsync(events?.AsEnumerable());
-
 
         public async Task PublishAsync(IEnumerable<IEvent> events)
         {
-            if (events is null)
+            if(events is null)
             {
                 return;
             }
+
             foreach (var @event in events)
             {
-                if (@event is null)
+                if (@event is null) 
                 {
                     continue;
                 }
@@ -37,7 +36,6 @@ namespace CExchange.Services.Users.Infrastructure.Services
                 var messageId = Guid.NewGuid().ToString("N");
                 await _busPublisher.PublishAsync(@event, messageId);
             }
-
         }
     }
 }

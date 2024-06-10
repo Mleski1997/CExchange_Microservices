@@ -1,6 +1,5 @@
 ﻿using CExchange.Services.Users.Application.Commands;
 using CExchange.Services.Users.Application.DTO;
-using CExchange.Services.Users.Application.Events;
 using CExchange.Services.Users.Application.PasswordSecurity;
 using CExchange.Services.Users.Application.Queries;
 using Convey.CQRS.Commands;
@@ -20,7 +19,7 @@ public class UserController : ControllerBase
     private readonly ITokenStorage _tokenStorage;
     private readonly IEventDispatcher _eventDispatcher;
     private readonly ILogger _logger;
-
+   
     public UserController(
         ICommandHandler<SignUp> signUpHandler,
         ICommandHandler<SignIn> signInHandler,
@@ -29,6 +28,7 @@ public class UserController : ControllerBase
         ITokenStorage tokenStorage,
         IEventDispatcher eventDispatcher,
         ILogger<UserController> logger
+    
         )
     {
         _signUpHandler = signUpHandler;
@@ -38,6 +38,7 @@ public class UserController : ControllerBase
         _tokenStorage = tokenStorage;
         _eventDispatcher = eventDispatcher;
         _logger = logger;
+       
     }
 
     [HttpGet("{userId}")]
@@ -61,12 +62,6 @@ public class UserController : ControllerBase
     {
         command = command with { UserId = Guid.NewGuid() };
         await _signUpHandler.HandleAsync(command);
-
-        var @event = new SignedUp(command.UserId, command.Email, "User's Name", "User's Last Name", "User Role");
-        _logger.LogInformation($"Publishing event for user {command.UserId}");
-        await _eventDispatcher.PublishAsync(@event);
-        _logger.LogInformation("Event published successfully");
-
         return CreatedAtAction(nameof(Get), new { command.UserId }, null);
     }
 

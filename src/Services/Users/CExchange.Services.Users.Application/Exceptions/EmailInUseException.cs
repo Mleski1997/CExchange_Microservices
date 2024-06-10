@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Exceptions
 {
-    public class EmailInUseException : CustomException
+    public class EmailInUseException : AppException
     {
-        public EmailInUseException() : base("Email in use")
+        public string Email { get; set; }
+        public EmailInUseException(string email) : base($"Email: `{email}` is invalid")
         {
+            Email = email;
         }
     }
 }

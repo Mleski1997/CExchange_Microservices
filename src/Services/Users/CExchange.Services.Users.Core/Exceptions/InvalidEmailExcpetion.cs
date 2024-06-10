@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Core.Exceptions
 {
-    internal class InvalidEmailExcpetion : CustomException
+    public class InvalidEmailExcpetion : CustomException
     {
+        public string Code { get; } = "email_in_use";
         public string Email { get; set; }
         public InvalidEmailExcpetion(string email) : base($"Email: `{email}` is invalid")
         {

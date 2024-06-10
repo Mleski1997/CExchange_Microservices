@@ -29,13 +29,13 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
 
         public async Task HandleAsync(SignIn command, CancellationToken cancellationToken)
         {
-            var user = await _userRepository.GetByEmailAsync(command.email);
+            var user = await _userRepository.GetByEmailAsync(command.Email);
             if (user is null)
             {
-                throw new EmailInUseException();
+                throw new EmailInUseException(command.Email);
             }
 
-            if (!_passwordManager.IsValid(command.password, user.Password))
+            if (!_passwordManager.IsValid(command.Password, user.Password))
             {
                 throw new MissingPasswordException();
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Exceptions
 {
-    public class MissingPasswordException : CustomException
+    public class MissingPasswordException : AppException
     {
        
         public MissingPasswordException() : base("Invalid Password")

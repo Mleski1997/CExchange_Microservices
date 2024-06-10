@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CExchange.Services.Users.Application
+namespace CExchange.Services.Users.Core.Entities
 {
-    public class ContractAttribute : Attribute
+    public interface IDomainEvent
     {
     }
 }

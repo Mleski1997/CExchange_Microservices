@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Builder;
 using CExchange.Services.Wallets.Application.External;
 using Convey.MessageBrokers.CQRS;
 using CExchange.Services.Wallets.Application.Services;
-using CExchange.Services.Wallets.Infrastructure.Services;
+
 
 namespace CExchange.Services.Wallets.Infrastructure
 {
@@ -23,7 +23,7 @@ namespace CExchange.Services.Wallets.Infrastructure
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
             builder.Services.AddScoped<IWalletRepository, WalletRepository>();
-            builder.Services.AddTransient<IMessageBroker, MessageBroker>();
+ 
             
 
             builder.AddRabbitMq();

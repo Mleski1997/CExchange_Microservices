@@ -2,6 +2,6 @@
 
 namespace CExchange.Services.Users.Application.Commands
 {
-    public record SignIn(string email, string password) : ICommand;
+    public record SignIn(string Email, string Password) : ICommand;
 
 }

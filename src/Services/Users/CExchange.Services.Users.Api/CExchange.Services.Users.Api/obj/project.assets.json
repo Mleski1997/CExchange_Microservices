@@ -3424,6 +3424,7 @@
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.EntityFrameworkCore": "8.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "compile": {

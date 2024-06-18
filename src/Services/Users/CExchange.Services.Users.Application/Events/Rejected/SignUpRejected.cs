@@ -10,15 +10,15 @@ namespace CExchange.Services.Users.Application.Events.Rejected
     [Contract]
     public class SignUpRejected : IRejectedEvent
     {
-        public string Email { get; set; }
-        public string Reason { get; set; }
-        public string  Code { get; set; }
+        public string Email { get; }
+        public string Reason { get; }
+        public string Code { get; }
 
         public SignUpRejected(string email, string reason, string code)
         {
-           Email = email;
-           Reason = reason;
-           Code = code;
+            Email = email;
+            Reason = reason;
+            Code = code;
         }
     }
 }

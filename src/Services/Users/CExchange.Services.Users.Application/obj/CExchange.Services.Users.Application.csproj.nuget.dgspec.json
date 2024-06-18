@@ -176,6 +176,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.26.0, )"
             }
           },
           "imports": [

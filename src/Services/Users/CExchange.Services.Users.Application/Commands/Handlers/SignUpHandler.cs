@@ -14,41 +14,43 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
     {
         private readonly IUserRepository _userRepository;
         private readonly IPasswordManager _passwordManger;
-        private readonly IMessageBroker _messageBroker;
+       // private readonly IMessageBroker _messageBroker;
         private readonly ILogger<SignUpHandler> _logger;
 
-        public SignUpHandler(IUserRepository userRepository, IPasswordManager passwordManger, IMessageBroker messageBroker, ILogger<SignUpHandler> logger)
+        public SignUpHandler(IUserRepository userRepository, IPasswordManager passwordManger, ILogger<SignUpHandler> logger)
         {
             _userRepository = userRepository;
             _passwordManger = passwordManger;
-            _messageBroker = messageBroker;
+           // _messageBroker = messageBroker;
             _logger = logger;
         }
+
         public async Task HandleAsync(SignUp command, CancellationToken cancellationToken = default)
         {
-
-            if(string.IsNullOrWhiteSpace(command.Email))
+            if (string.IsNullOrWhiteSpace(command.Email))
             {
                 throw new InvalidEmailException(command.Email);
-            } 
+            }
 
-            if(string.IsNullOrWhiteSpace(command.Password))
+            if (string.IsNullOrWhiteSpace(command.Password))
             {
                 throw new MissingPasswordException();
             }
+
             var user = await _userRepository.GetByEmailAsync(command.Email);
-            if(user is not null)
+            if (user != null)
             {
                 throw new EmailInUseException(command.Email);
             }
 
             var securedPassword = _passwordManger.Secure(command.Password);
-            user = new User(command.UserId, command.Email, command.Name, command.LastName, command.Role, securedPassword);
+            user = new User(command.Id, command.Email, command.Name, command.LastName, command.Role, securedPassword);
             await _userRepository.AddAsync(user);
-            await _messageBroker.PublishAsync(new SingedUp(user.UserId, user.Email, user.Role));
 
-          
+            var userCreatedEvent = new SignedUp(user.Id, user.Email, user.Name, user.LastName);
+           // await _messageBroker.PublishAsync(userCreatedEvent);
 
+            _logger.LogInformation("SignedUp event sent to RabbitMQ for user {UserId}", user.Id);
         }
     }
 }

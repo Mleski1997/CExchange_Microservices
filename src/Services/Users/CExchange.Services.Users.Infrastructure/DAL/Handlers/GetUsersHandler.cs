@@ -1,22 +1,24 @@
 ﻿using CExchange.Services.Users.Application.DTO;
 using CExchange.Services.Users.Application.Queries;
 using CExchange.Services.Users.Core.Entities;
+using CExchange.Services.Users.Infrastructure.DAL.MongoDB;
 using Convey.CQRS.Queries;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver;
 
 namespace CExchange.Services.Users.Infrastructure.DAL.Handlers
 {
     internal sealed class GetUsersHandler : IQueryHandler<GetUsers, IEnumerable<UserDto>>
     {
-        private readonly UserDbContext _context;
+        private readonly IMongoCollection<User> _users;
 
-        public GetUsersHandler(UserDbContext context)
+        public GetUsersHandler(IMongoDbContext context)
         {
-            _context = context;
+            _users = context.Users;
         }
         public async Task<IEnumerable<UserDto>> HandleAsync(GetUsers query, CancellationToken cancellationToken = default)
         {
-            var users = await _context.Users.AsNoTracking().ToListAsync();
+            var users = await _users.Find(_ => true).ToListAsync(cancellationToken);
 
             return users.Select(user => MapToDto(user)).ToList();
 
@@ -26,7 +28,7 @@ namespace CExchange.Services.Users.Infrastructure.DAL.Handlers
         {
             return new UserDto
             {
-                Id = user.UserId,
+                Id = user.Id,
                 Name = user.Name,
                 LastName = user.LastName,
             };

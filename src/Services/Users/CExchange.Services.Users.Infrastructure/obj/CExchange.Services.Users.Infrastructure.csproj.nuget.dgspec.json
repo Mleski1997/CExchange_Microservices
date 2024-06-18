@@ -176,6 +176,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.26.0, )"
             }
           },
           "imports": [
@@ -292,7 +296,23 @@
               "target": "Package",
               "version": "[1.1.448, )"
             },
+            "Convey.MessageBrokers.Outbox.Mongo": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
             "Convey.MessageBrokers.RabbitMQ": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Persistence.MongoDB": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Tracing.Jaeger": {
+              "target": "Package",
+              "version": "[1.1.448, )"
+            },
+            "Convey.Tracing.Jaeger.RabbitMQ": {
               "target": "Package",
               "version": "[1.1.448, )"
             },
@@ -310,7 +330,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.AspNetCore.Hosting": {
               "target": "Package",
@@ -318,27 +338,43 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.26.0, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",

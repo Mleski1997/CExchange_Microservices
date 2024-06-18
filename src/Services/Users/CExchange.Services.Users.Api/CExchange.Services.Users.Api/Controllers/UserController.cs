@@ -60,9 +60,9 @@ public class UserController : ControllerBase
     [HttpPost("sign-up")]
     public async Task<ActionResult> Post([FromBody] SignUp command)
     {
-        command = command with { UserId = Guid.NewGuid() };
+        command = command with { Id = Guid.NewGuid() };
         await _signUpHandler.HandleAsync(command);
-        return CreatedAtAction(nameof(Get), new { command.UserId }, null);
+        return CreatedAtAction(nameof(Get), new { command.Id }, null);
     }
 
     [HttpPost("sign-in")]

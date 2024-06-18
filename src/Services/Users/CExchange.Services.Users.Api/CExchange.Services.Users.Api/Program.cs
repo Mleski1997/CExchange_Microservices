@@ -1,14 +1,13 @@
 using CExchange.Services.Users.Application;
 using CExchange.Services.Users.Infrastructure;
 using Convey;
-using Convey.MessageBrokers.RabbitMQ;
 using Convey.WebApi;
-using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddConvey()              
+builder.Services.AddConvey()
+                 .AddWebApi()
                  .AddApplication()
                  .AddInfrastructure(builder.Configuration);
 builder.Services.AddControllers();
@@ -20,7 +19,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

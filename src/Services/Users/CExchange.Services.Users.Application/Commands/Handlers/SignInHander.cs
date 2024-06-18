@@ -40,7 +40,7 @@ namespace CExchange.Services.Users.Application.Commands.Handlers
                 throw new MissingPasswordException();
             }
 
-            var jwt = _authenticator.CreateToken(user.UserId, user.Role);
+            var jwt = _authenticator.CreateToken(user.Id, user.Role);
             _tokenStorage.Set(jwt);
         }
     }

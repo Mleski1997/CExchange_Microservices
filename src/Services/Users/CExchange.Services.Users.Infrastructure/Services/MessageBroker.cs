@@ -16,13 +16,13 @@ namespace CExchange.Services.Users.Infrastructure.Services
     {
         private readonly IBusPublisher _busPublisher;
         private readonly ILogger<IMessageBroker> _logger;
-        
+
 
         public MessageBroker(IBusPublisher busPublisher, ILogger<IMessageBroker> logger)
         {
             _busPublisher = busPublisher;
             _logger = logger;
-            
+
         }
 
         public Task PublishAsync(params IEvent[] events) => PublishAsync(events?.AsEnumerable());

@@ -12,7 +12,7 @@ namespace CExchange.Services.Users.Infrastructure.Auth
     internal static class Extensions
     {
         private const string SectionName = "auth";
-        public static IServiceCollection AddAuth (this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<AuthOptions>(configuration.GetRequiredSection(SectionName));
             var options = configuration.GetOptions<AuthOptions>(SectionName);
@@ -39,7 +39,7 @@ namespace CExchange.Services.Users.Infrastructure.Auth
                 });
             services.AddAuthentication();
 
-                return services;
+            return services;
         }
     }
 }

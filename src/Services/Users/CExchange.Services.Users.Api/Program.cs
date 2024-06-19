@@ -1,31 +1,26 @@
 using CExchange.Services.Users.Application;
 using CExchange.Services.Users.Infrastructure;
 using Convey;
+using Convey.MessageBrokers.RabbitMQ;
+using Convey.WebApi;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
-builder.Services.AddConvey()
-                 .AddApplication()
-                 .AddInfrastructure(builder.Configuration);
+var builder = WebHost.CreateDefaultBuilder(args)
+    .ConfigureServices(services => services
+        .AddConvey()
+        .AddWebApi()
+        .AddApplication()
+        .AddInfrastructure()
+        .Build())
+    .Configure(app => app
+        .UseInfrastructure());
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
-
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseInfrastructure();
-
-app.Run();
+var host = builder.Build();
+await host.RunAsync();

@@ -23,7 +23,7 @@ namespace CExchange.Services.Users.Infrastructure.Auth
             _issuer = options.Value.Issuer;
             _audience = options.Value.Audience;
             _expiry = options.Value.Expiry ?? TimeSpan.FromHours(1);
-            _signinCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Value.SigningKey)), 
+            _signinCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Value.SigningKey)),
                 SecurityAlgorithms.HmacSha256);
             _clock = clock;
         }

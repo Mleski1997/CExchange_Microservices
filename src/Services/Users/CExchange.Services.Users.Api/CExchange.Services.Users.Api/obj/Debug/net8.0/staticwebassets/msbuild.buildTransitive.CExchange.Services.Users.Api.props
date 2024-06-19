@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CExchange.Services.Users.Api.props" />
-</Project>

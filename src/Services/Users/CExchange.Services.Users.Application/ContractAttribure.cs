@@ -8,6 +8,5 @@ namespace CExchange.Services.Users.Application
 {
     public class ContractAttribute : Attribute
     {
-
     }
 }

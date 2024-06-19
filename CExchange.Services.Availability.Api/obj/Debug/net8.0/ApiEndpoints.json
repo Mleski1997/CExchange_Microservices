@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "CExchange.Services.Availability.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CExchange.Services.Availability.Api.WeatherForecast, CExchange.Services.Availability.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

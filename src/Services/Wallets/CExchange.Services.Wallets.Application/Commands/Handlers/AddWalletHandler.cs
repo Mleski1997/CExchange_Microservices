@@ -45,7 +45,7 @@ namespace CExchange.Services.Wallets.Application.Commands.Handlers
             }
             while (await _walletRepository.AddressExistsAsync(address));
 
-            return address;
+            
         }
     }
 }

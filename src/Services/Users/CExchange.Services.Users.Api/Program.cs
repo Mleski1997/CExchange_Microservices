@@ -7,20 +7,35 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
 
 
 // Add services to the container.
-var builder = WebHost.CreateDefaultBuilder(args)
-    .ConfigureServices(services => services
-        .AddConvey()
-        .AddWebApi()
-        .AddApplication()
-        .AddInfrastructure()
-        .Build())
-    .Configure(app => app
-        .UseInfrastructure());
+var builder = WebApplication.CreateBuilder(args);
+builder.Services
+            .AddConvey()
+            .AddWebApi()
+            .AddApplication()
+            .AddInfrastructure()
+            .Build();
+
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.UseInfrastructure();
+
+app.MapControllers();
 
 
-var host = builder.Build();
-await host.RunAsync();
+
+await app.RunAsync();

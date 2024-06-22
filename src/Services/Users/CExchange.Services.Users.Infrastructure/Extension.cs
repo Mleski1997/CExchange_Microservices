@@ -24,6 +24,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using Convey.WebApi.Swagger;
+using Convey.Docs.Swagger;
 
 
 namespace CExchange.Services.Users.Infrastructure
@@ -42,6 +44,8 @@ namespace CExchange.Services.Users.Infrastructure
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddSingleton<IClock, Clock>();
             builder.Services.AddScoped<IPasswordManager, PasswordManager>();
+            builder.Services.AddTransient<IAuthenticator, Authenticator>();
+            builder.Services.AddTransient<ITokenStorage, HttpContextTokenStorage>();
 
             builder.AddExceptionToMessageMapper<ExceptionToMessageMapper>();
 
@@ -50,9 +54,12 @@ namespace CExchange.Services.Users.Infrastructure
                 .AddInMemoryQueryDispatcher()
                 .AddMongo()
                 .AddRabbitMq();
-                
+               
 
-          
+
+
+
+
 
 
             return builder;
@@ -60,10 +67,12 @@ namespace CExchange.Services.Users.Infrastructure
 
         public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
         {
-            app
+            app 
                 .UseConvey()
                 .UsePublicContracts<ContractAttribute>()
                 .UseRabbitMq();
+                
+
                 
 
             return app;

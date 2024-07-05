@@ -1,4 +1,5 @@
-﻿using Convey.CQRS.Commands;
+﻿
+using CExchange.Services.Users.Application.Abstractions;
 
 namespace CExchange.Services.Users.Application.Commands
 {

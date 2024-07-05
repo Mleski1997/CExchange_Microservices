@@ -1,14 +1,14 @@
-﻿using CExchange.Services.Users.Application.DTO;
+﻿using CExchange.Services.Users.Application.Abstractions;
+using CExchange.Services.Users.Application.DTO;
 using CExchange.Services.Users.Application.Queries;
 using CExchange.Services.Users.Core.Entities;
 using CExchange.Services.Users.Infrastructure.DAL.MongoDB;
-using Convey.CQRS.Queries;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 
 namespace CExchange.Services.Users.Infrastructure.DAL.Handlers
 {
-    internal sealed class GetUsersHandler : IQueryHandler<GetUsers, IEnumerable<UserDto>>
+    public sealed class GetUsersHandler : IQueryHandler<GetUsers, IEnumerable<UserDto>>
     {
         private readonly IMongoCollection<User> _users;
 

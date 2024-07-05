@@ -1,7 +1,7 @@
-﻿using CExchange.Services.Users.Application.Exceptions;
+﻿using CExchange.Services.Users.Application.Abstractions;
+using CExchange.Services.Users.Application.Exceptions;
 using CExchange.Services.Users.Application.PasswordSecurity;
 using CExchange.Services.Users.Core.Repositories;
-using Convey.CQRS.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Commands.Handlers
 {
-    internal sealed class SignInHandler : ICommandHandler<SignIn>
+    public sealed class SignInHandler : ICommandHandler<SignIn>
     {
         private readonly IUserRepository _userRepository;
         private readonly IAuthenticator _authenticator;

@@ -28,7 +28,7 @@ namespace CExchange.Services.Users.Infrastructure.DAL.MongoDB
             var settings = options.Value;
             var mongoUrl = MongoUrl.Create(settings.ConnectionString);
             var client = new MongoClient(mongoUrl);
-            _database = client.GetDatabase(settings.DatabaseName);
+            _database = client.GetDatabase(settings.Database);
         }
 
         public IMongoCollection<User> Users => _database.GetCollection<User>("Users");

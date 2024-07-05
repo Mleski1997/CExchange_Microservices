@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Events.Rejected
 {
-    [Contract]
+
     public class SignUpRejected : IRejectedEvent
     {
         public string Email { get; }

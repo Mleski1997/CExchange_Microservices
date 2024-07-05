@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CryptoAssets", "CryptoAsset
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExchange.Services.Users.Api", "src\Services\Users\CExchange.Services.Users.Api\CExchange.Services.Users.Api.csproj", "{4561C6A1-F6DD-4399-8B3C-CB0021EC7136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReabbitMqProductAPI", "ReabbitMqProductAPI\ReabbitMqProductAPI.csproj", "{28754024-B09D-4941-A5EE-E9E1B06AA21C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{4561C6A1-F6DD-4399-8B3C-CB0021EC7136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4561C6A1-F6DD-4399-8B3C-CB0021EC7136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4561C6A1-F6DD-4399-8B3C-CB0021EC7136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28754024-B09D-4941-A5EE-E9E1B06AA21C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28754024-B09D-4941-A5EE-E9E1B06AA21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28754024-B09D-4941-A5EE-E9E1B06AA21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28754024-B09D-4941-A5EE-E9E1B06AA21C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{2A67925A-5B1E-4E31-A8AF-19A05B663CDE} = {33960DF1-31B3-40EA-A288-315470D8FFEA}
 		{84A6501F-1E03-4A7E-BF7D-8A7E478E4066} = {022D3343-C5A2-41EE-ACC7-00DE78E7F776}
 		{4561C6A1-F6DD-4399-8B3C-CB0021EC7136} = {47475AD3-C6FA-4381-B871-628B033DD9BB}
+		{28754024-B09D-4941-A5EE-E9E1B06AA21C} = {84A6501F-1E03-4A7E-BF7D-8A7E478E4066}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C0739A6-B4B2-4D61-89E6-99409A04142F}

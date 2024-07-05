@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Application.Events
 {
-    [Contract]
+   
     public class SignedUp : IEvent
     {
         public Guid Id { get; }

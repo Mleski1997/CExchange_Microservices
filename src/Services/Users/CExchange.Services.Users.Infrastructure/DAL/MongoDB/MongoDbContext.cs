@@ -1,16 +1,10 @@
-﻿using CExchange.Services.Users.Core.Entities;
+﻿// Infrastructure/DAL/MongoDB/MongoDbContext.cs
+using CExchange.Services.Users.Core.Entities;
+using CExchange.Services.Users.Core.ValueObjects;
 using CExchange.Services.Users.Infrastructure.DAL.MongoDB.Settings;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
-using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CExchange.Services.Users.Infrastructure.DAL.MongoDB
 {
@@ -20,7 +14,12 @@ namespace CExchange.Services.Users.Infrastructure.DAL.MongoDB
 
         static MongoDbContext()
         {
-            BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
+            BsonSerializer.RegisterSerializer(new EmailSerializer());
+            BsonClassMap.RegisterClassMap<User>(cm =>
+            {
+                cm.AutoMap();
+                cm.MapMember(c => c.Email).SetSerializer(new EmailSerializer());
+            });
         }
 
         public MongoDbContext(IOptions<MongoDbSettings> options)
